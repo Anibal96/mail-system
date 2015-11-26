@@ -9,20 +9,20 @@
 public class MailItem
 {
     // Emisor del mensaje.
-    private String de;
+    private String from;
     // Destinatario del mensaje.
-    private String a;
+    private String to;
     // Mensaje enviado.
-    private String mensaje;
+    private String menssage;
 
     /**
      * Constructor que asigna los valores a de, a y al mensaje.
      */
     public MailItem(String deX, String aX, String mensajeX)
     {
-        de = deX;
-        a = aX;
-        mensaje = mensajeX;
+        from = deX;
+        to = aX;
+        menssage = mensajeX;
     }
 
     /**
@@ -30,9 +30,9 @@ public class MailItem
      */
     public void print()
     {
-        System.out.println("De: " + de);
-        System.out.println("A: " + a);
-        System.out.println("Mesaje: " + mensaje);
+        System.out.println("De: " + from);
+        System.out.println("A: " + to);
+        System.out.println("Mesaje: " + menssage);
     }
     
     /**
@@ -40,7 +40,7 @@ public class MailItem
      */
     public String getFrom()
     {
-        return de;
+        return from;
     }
 
     /**
@@ -48,7 +48,7 @@ public class MailItem
      */
     public String getTo()
     {
-        return a;
+        return to;
     }
 
     /**
@@ -56,6 +56,6 @@ public class MailItem
      */
     public String getMessage()
     {
-        return mensaje;
+        return menssage;
     }
 }
