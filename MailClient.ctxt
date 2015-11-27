@@ -2,8 +2,8 @@
 comment0.params=servidor\ usuario
 comment0.target=MailClient(MailServer,\ java.lang.String)
 comment0.text=\r\n\ Constructor\ que\ asigna\ valores\ a\ servidor\ y\ usuario.\r\n
-comment1.params=a\ mensaje
-comment1.target=void\ sendMailItem(java.lang.String,\ java.lang.String)
+comment1.params=a\ subject\ mensaje
+comment1.target=void\ sendMailItem(java.lang.String,\ java.lang.String,\ java.lang.String)
 comment1.text=\r\n\ Metodo\ que\ permite\ escribir\ un\ mensaje\ a\ un\ usuario.\r\n
 comment2.params=
 comment2.target=MailItem\ getNextMailItem()

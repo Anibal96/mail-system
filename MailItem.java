@@ -14,14 +14,17 @@ public class MailItem
     private String to;
     // Mensaje enviado.
     private String menssage;
+    //Asunto del mensaje
+    private String subject;
 
     /**
      * Constructor que asigna los valores a de, a y al mensaje.
      */
-    public MailItem(String from, String to, String menssaje)
+    public MailItem(String from, String to, String subject, String menssage)
     {
         this.from = from;
         this.to = to;
+        this.subject = subject;
         this.menssage = menssage;
     }
 
@@ -32,6 +35,7 @@ public class MailItem
     {
         System.out.println("De: " + from);
         System.out.println("A: " + to);
+        System.out.println("Asunto: " + subject);
         System.out.println("Mesaje: " + menssage);
     }
     
@@ -57,5 +61,12 @@ public class MailItem
     public String getMessage()
     {
         return menssage;
+    }
+    /**
+     * Metodo que devuelve un asunto.
+     */
+    public String getSubject()
+    {
+        return subject;
     }
 }

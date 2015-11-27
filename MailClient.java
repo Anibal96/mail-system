@@ -24,9 +24,9 @@ public class MailClient
     /**
      * Metodo que permite escribir un mensaje a un usuario.
      */
-    public void sendMailItem(String a, String mensaje)
+    public void sendMailItem(String a,String subject, String mensaje)
     {
-        MailItem item = new MailItem(usuario, a, mensaje);
+        MailItem item = new MailItem(usuario, a, subject, mensaje);
         servidor.post(item);
     }
     
