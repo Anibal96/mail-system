@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.params=deX\ aX\ mensajeX
+comment0.params=from\ to\ menssaje
 comment0.target=MailItem(java.lang.String,\ java.lang.String,\ java.lang.String)
 comment0.text=\r\n\ Constructor\ que\ asigna\ los\ valores\ a\ de,\ a\ y\ al\ mensaje.\r\n
 comment1.params=

@@ -18,11 +18,11 @@ public class MailItem
     /**
      * Constructor que asigna los valores a de, a y al mensaje.
      */
-    public MailItem(String deX, String aX, String mensajeX)
+    public MailItem(String from, String to, String menssaje)
     {
-        from = deX;
-        to = aX;
-        menssage = mensajeX;
+        this.from = from;
+        this.to = to;
+        this.menssage = menssage;
     }
 
     /**

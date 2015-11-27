@@ -15,10 +15,10 @@ public class MailClient
     /**
      * Constructor que asigna valores a servidor y usuario.
      */
-    public MailClient(MailServer servidorX, String usuarioX)
+    public MailClient(MailServer servidor, String usuario)
     {
-        servidor = servidorX;
-        usuario = usuarioX;
+        this.servidor = servidor;
+        this.usuario = usuario;
     }
 
     /**
