@@ -52,4 +52,29 @@ public class MailClient
             item.print();
         }
     }
+    
+    /**
+     * 
+     */
+    public void howManyMailItemsIHave(){
+        int contador = servidor.howManyMailItems(usuario);
+        System.out.println("Correos pendientes: " + contador);
+    }
+    
+    /**
+     * 
+     */
+    public void printNextMailItemAndSendAutomaticRespond()
+    {
+        MailItem item = servidor.getNextMailItem(usuario);
+        if(item == null) {
+            System.out.println("No tienes ningun mensaje nuevo.");
+        }
+        else {
+            String respuesta = "Ahora no estoy en la oficina";
+            MailItem items = new MailItem(item.getTo(), item.getFrom(), item.getSubject(), respuesta);
+            servidor.post(item);
+           
+        }
+    }
 }
